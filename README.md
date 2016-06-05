@@ -26,18 +26,18 @@ This repository contains material for a workshop we arrange for the hackers in t
   This command will install mqtt libraries and modify the **package.json** to add a reference to this package. 
   (Note: documentation for mqtt library is [here](https://www.npmjs.com/package/mqtt));
 * *[OPTIONAL]*: Edit **Menemen\Device\package.json**. Change following part;
-    ~~~~
+    ```
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     }
-    ~~~~
+    ```
     to 
-    ~~~~
+    ```
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "start": "node device.js myDevice"
     }
-    ~~~~
+    ```   
   to be able to start app from command line with **npm start**. Change *myDevice* to anything you want to represent the device id.
 
 
@@ -52,7 +52,7 @@ This repository contains material for a workshop we arrange for the hackers in t
 * On the command line, navigate to **Menemen\Server** and call following command;  
   `express`  
   This will create a folder structure as below;
-  ~~~~
+  ```
     ├── app.js
     ├── bin
     │   └── www
@@ -69,7 +69,7 @@ This repository contains material for a workshop we arrange for the hackers in t
         ├── error.jade
         ├── index.jade
         └── layout.jade
-  ~~~~
+  ```  
 * *[OPTIONAL]* Clean up unnecesessary items; delete **images** folder, **routes\users.js** and edit **app.js** and remove following lines;  
   `var users = require('./routes/users');`  
   and   
