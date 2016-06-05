@@ -1,6 +1,8 @@
-This repository contains material for a workshop we arrange for the hackers in the office.   
+**DISCLAIMER**: Code available in this respository is not appropriate for using in production, shouldn't be taken as example of "good code". We do not follow best practices here because we don't have to. We're just trying to create something good enough for our workshops. 
 
-# Environment Setup
+We'll create a device client and a web application. Device client will get sensor data and send it to a server. Web app will receive these sensor readings, display them and send commands back to device.  
+
+## Environment Setup
 * Download Visual Studio Code from [here](https://code.visualstudio.com) and install.
 * Download nodejs from [here](https://nodejs.org/en/) and install.
 * To check if node is properly installed, execute following command from command line;  
@@ -10,7 +12,7 @@ This repository contains material for a workshop we arrange for the hackers in t
   from command line. If you don't see 'Environment variable NODE_PATH not defined', then you're fine. 
   Otherwise set node_modules folder's path to NODE_PATH (typically in "c:\Program Files\nodejs\node_modules\"). 
 
-# Develop Device Client
+## Develop Device Client
 * Create a folder **Menemen**.
 * Create a file called **constantvals.js** in this folder.
 * Put the code in **MenemenWorkshop\constantvals.js** into this new file.
@@ -41,7 +43,7 @@ This repository contains material for a workshop we arrange for the hackers in t
   to be able to start app from command line with **npm start**. Change *myDevice* to anything you want to represent the device id.
 
 
-# Develop Web App
+## Develop Web App
 * Open command line and install express:  
   `npm install -g express`
 * Install express generator:  
