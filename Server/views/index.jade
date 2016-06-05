@@ -1,0 +1,18 @@
+extends layout
+ 
+block content
+  h1=title
+  p Device Id 
+    input(type='text', id='device-id', value=deviceId)
+  p
+    span Command Last Sent On: 
+    span#command-timestamp [NOT YET]
+  
+  div
+    button(id='update-data', class='device-data-action') Update Data        
+    button(id='send-command', class='device-data-action') Send Command
+  
+  div#device-data-table-container
+  
+  script(src='https://code.jquery.com/jquery-1.12.4.min.js')
+  script(src='/javascripts/index-brw.js')

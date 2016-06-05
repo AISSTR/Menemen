@@ -1,0 +1,15 @@
+table
+    thead
+        tr
+            th Index
+            th Value
+            th Timestamp
+    tbody
+        -for(var i=0; i< Math.min(10, dataPoints.length); i++) {
+        tr
+            td=(i+1)
+            td=dataPoints[i].value
+            - var date = new Date(dataPoints[i].timeStamp)
+            - var time = ('0' + date.getHours()).slice(-2) + ':' + ('0' + date.getMinutes()).slice(-2) + ':' + ('0' + date.getSeconds()).slice(-2) 
+            td=time
+        -}  
