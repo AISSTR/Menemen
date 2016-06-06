@@ -3,6 +3,7 @@
 We'll create a device client and a web application. Device client will get sensor data and send it to a server. Web app will receive these sensor readings, display them and send commands back to device.  
 
 ## Environment Setup
+* Download this repository and extract it into a folder named **MenemenWorkshop**.
 * Download Visual Studio Code from [here](https://code.visualstudio.com) and install.
 * Download nodejs from [here](https://nodejs.org/en/) and install.
 * To check if node is properly installed, execute following command from command line;  
